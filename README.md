@@ -3,7 +3,7 @@
 Features:
 - GET,SET,UNSET,NUMEQUALTO are all log(n)
 - There is client side transaction support. Meaning Rollback transaction log is stored on the client. Every operation is committed to server and in case of rollback client will send a rollback log in one shot back to server. Nested transactions are supported.
-- Supported Commands: GET,SET,UNSET,NUMEQUALTO,BEGIN,COMMIT,ROLLBACK,END
+- Supported commands: GET,SET,UNSET,NUMEQUALTO,BEGIN,COMMIT,ROLLBACK,END
 
 
 note:
