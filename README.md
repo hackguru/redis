@@ -1,7 +1,7 @@
 ### Super simplistic implementation of Redis like cache on top of AVL tree in GO
 
 Features:
-- SET,UNSET,NUMEQUALTO are all log(n)
+- GET,SET,UNSET,NUMEQUALTO are all log(n)
 - There is client side transaction support. Meaning Rollback transaction log is stored on the client. Every operation is committed to server and in case of rollback client will send a rollback log in one shot back to server. Nested transactions are supported.
 
 
