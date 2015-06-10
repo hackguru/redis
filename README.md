@@ -7,15 +7,15 @@ Features:
 
 note:
  - Transactions don't lock the variables being modified. In the event of rollback, values will be reset to the value at the moment of first operation on that variable inside transaction.
- - Hash based key value storage (like redis) is probably a better option for read heavy usages. But they don't guarantee a constant time insert (in case insert cause a rehash)
+ - Hash based key value storage (like redis) is probably a better option for read heavy usages. But they don't guarantee a constant time insert (in case insert causes a rehash)
  - locking is at tree level right now and happens both for read and write. TODO is to make key value pair locks and support no-locked reads.
 
 To run:
 - Server: go to server folder and run
 ```
-go run server.go
+$ go run server.go
 ```
 - Client: go to client folder and run
 ```
-go run client.go
+$ go run client.go
 ```
